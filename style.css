@@ -1,12 +1,59 @@
-body {
+@font-face {
+    font-family: Norse-Bold;
+    src: url(Norse-Bold.otf);
+  }
+  
+  h1 {
+    font-family: Norse-Bold, sans-serif;
+  }
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+#general{
     display: flex;
     flex-direction: row;
-    max-width: 100vw;
-    max-height: 100vh;
-
+    width: 100vw;
+    height: 100vh;
 }
 
 .image-container {
+    background-image: url(images/olimpia-davies-tOMJGFEWqKU-unsplash.jpg);
+    width: 35vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.para-form{
+    height: 33vh;
+}
+
+.form-itself{
+    height: 33vh;
+}
+
+.submit{
+    height: 33vh;
+}
+
+
+
+
+
+
+
+/*.image-container {
     display: flex;
     background-image: url(images/olimpia-davies-tOMJGFEWqKU-unsplash.jpg);
     background-position: center;
@@ -27,8 +74,15 @@ img {
     border-radius: 50%;
 }
 
-/*.image-container>.dishes {
+.image-container>.dishes {
     width: 40%;
     height: 100%;
     z-index: -1;
 }
+
+.form-itself {
+    display: flex;
+    width: 60vw;
+    height: 100vh;
+
+}*/
