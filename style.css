@@ -3,13 +3,16 @@
     src: url(Norse-Bold.otf);
   }
   
-  h1 {
+.image-container h1 {
     font-family: Norse-Bold, sans-serif;
+    font-size: 3.5rem;
   }
 
 body{
     margin: 0;
     padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    font-size: 16px;
 }
 
 
@@ -20,69 +23,149 @@ body{
     height: 100vh;
 }
 
+
+/*Left side of the Form (Image and Logo)*/
+
 .image-container {
     background-image: url(images/olimpia-davies-tOMJGFEWqKU-unsplash.jpg);
     width: 35vw;
     background-repeat: no-repeat;
     background-size: cover;
-
+    display: flex;
+    flex-direction: column;
+    
 }
+
+.image-nordic {
+    background: black;
+    opacity: 0.7;
+    margin-top: 15vh;
+    height: 20vh;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    
+}
+
+.image-nordic h1 {
+    color: white;
+    text-align: center;
+    font-weight: 800;
+}
+
+.image-footer {
+    display: flex;
+    height: 60vh;
+    align-items: flex-end;
+    justify-content: center;
+    width: 35vw;
+    font-weight: 800;
+    color: white;
+}
+/*Right side of the form (Paragraph, form content and submit button)*/
 
 .form-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 0;
+    width: 65vw;
 
 }
+
+/*Paragraph style*/
 
 .para-form{
+    display: flex;
+    align-items: flex-end;
+    padding-left: 5%;
+    padding-bottom: 2%;
     height: 33vh;
+    background: rgba(255, 160, 59, 0.855);
+    font-size: 0.9rem;
 }
+
+/*Form content style*/
 
 .form-itself{
     height: 33vh;
+    background: rgba(255, 200, 142, 0.855);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    padding-bottom: 5%;
+    padding-left: 5%;
+
 }
+
+.main-form{
+    display: flex;
+    flex-direction: row;
+    gap: 4%;
+}
+
+.right-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.left-form {
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    padding: 3%;
+    width: 10vw;
+    font-size: 1rem;
+}
+
+input {
+    height: 25px;
+    border: 1px solid bisque;
+    border-radius: 7px;
+}
+
+input:focus {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-color: orangered;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+#error {
+    color: rgb(182, 35, 35);
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+/*Submit button style*/
 
 .submit{
     height: 33vh;
+    background: rgb(245, 235, 224);
+    padding-top: 5%;
+    padding-left: 5%;
+
 }
 
+button {
+    background: orangered;
+    padding: 12px 24px;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
-
-
-
-
-
-/*.image-container {
-    display: flex;
-    background-image: url(images/olimpia-davies-tOMJGFEWqKU-unsplash.jpg);
-    background-position: center;
-    background-size: auto;
-    background-repeat: no-repeat;
-    width: 40vw;
-    height: 100vh;
 }
 
-img {
-    height: auto;
-    position: relative;
-    top: 20vh;
-    gap: 1vw;
-    padding: 15px 0;
-    width: 20vw;
-    height: 20vh;
-    border-radius: 50%;
+button:hover{
+    background: orange;
 }
 
-.image-container>.dishes {
-    width: 40%;
-    height: 100%;
-    z-index: -1;
+.submit p{
+    font-size: 1.2rem;
 }
-
-.form-itself {
-    display: flex;
-    width: 60vw;
-    height: 100vh;
-
-}*/

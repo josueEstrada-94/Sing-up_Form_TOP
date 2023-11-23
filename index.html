@@ -6,44 +6,59 @@
     <title>Nordic Spoon - Sign Up</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/Brown Simple Icon Food Logo.png">
+    <script src="main.js" defer></script>
 </head>
 <body>
     <div id="general">
 
         <div class="image-container">
-            <div> <img src="images/odin-lined.png" alt="food logo"><h1>Nordic Spoon</h1>
+            <div class="image-nordic">
+                <img src="images/odin-lined.png" alt="food logo" height="120px">
+                <h1>Nordic Spoon</h1>
             </div>
-            <p>Photo by <a href="https://unsplash.com/@olimpiadavies?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Olimpia Davies</a> on <a href="https://unsplash.com/photos/a-table-topped-with-bowls-of-food-and-bowls-of-sauce-tOMJGFEWqKU?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></p>
+            <div class="image-footer">
+                <p>Photo by <a href="https://unsplash.com/@olimpiadavies?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Olimpia Davies</a> on <a href="https://unsplash.com/photos/a-table-topped-with-bowls-of-food-and-bowls-of-sauce-tOMJGFEWqKU?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></p>
+            </div>
         </div>
 
 
         <div class="form-container">
-           <div class="para-form"><h2>Sign up to stay in touch with our great community and share your own recipes or get inspiration from our friends food masterpieces in Culinary Journey!</h2>
+           <div class="para-form"><h1>Sign up to stay in touch with our great community and share your own recipes<br>
+            or get inspiration from our friend's food <em>masterpieces</em> in Nordic Spoon.
+            <br><br>
+                Feel <em>Welcome</em>!
+            </h1>
            </div> 
-           
+
             <main class="form-itself">
-                <fieldset><legend><h2>Let's do this</h2></legend>
+                <h2>Let's do this!</h2>
                 
-                <form action="get">
-                    <label for="first-name">FIRST NAME</label>
-                    <input type="text" id="first-name" name="first-name">
+                <form method="get" class="main-form">
+                    
+                    <div class="right-form">                   
+                        <label for="first-name">FIRST NAME</label>
+                        <input type="text" id="first-name" name="first-name">
 
-                    <label for="last-name">LAST NAME</label>
-                    <input type="text" id="last-name" name="last-name">
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" name="email">
 
-                    <label for="email">EMAIL</label>
-                    <input type="email" id="email" name="email">
+                        <label for="password">PASSWORD</label>
+                        <input type="password" id="password" name="password" required>
+                        <p id="error"></p>
 
-                    <label for="phone">PHONE NUMBER</label>
-                    <input type="number" id="phone" name="phone">
+                    </div>
 
-                    <label for="password">PASSWORD</label>
-                    <input type="password" id="password" name="password">
+                    <div class="left-form">
+                        <label for="last-name">LAST NAME</label>
+                        <input type="text" id="last-name" name="last-name">
 
-                    <label for="confirm">CONFIRM PASSWORD</label>
-                    <input type="password" id="confirm" name="confirm">
+                        <label for="phone">PHONE NUMBER</label>
+                        <input type="tel" id="phone" name="phone">
+
+                        <label for="confirm">CONFIRM PASSWORD</label>
+                        <input type="password" id="confirm" name="confirm" required>
+                    </div>
                 </form>
-            </fieldset>
             </main>
 
             <div class="submit">
